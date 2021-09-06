@@ -4,7 +4,11 @@
   "description": "Demo fullstack project using React, TypeScript, GraphQL, Apollo, Node.js, PostgreSQL, TypeORM, Redis, Next.js, TypeGraphQL, and Chakra.",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node src/index.ts"
+    "watch": "tsc -w",
+    "dev": "nodemon dist/indes.js",
+    "start": "node dist/index.js",
+    "start2": "ts-node src/index.ts",
+    "dev2": "nodemon --exec ts-node src/index.ts"
   },
   "repository": {
     "type": "git",
@@ -16,5 +20,17 @@
   "bugs": {
     "url": "https://github.com/BasilSwaggert/FullStackDemo/issues"
   },
-  "homepage": "https://github.com/BasilSwaggert/FullStackDemo#readme"
+  "homepage": "https://github.com/BasilSwaggert/FullStackDemo#readme",
+  "devDependencies": {
+    "@types/node": "^16.7.10",
+    "nodemon": "^2.0.12",
+    "typescript": "^4.4.2"
+  },
+  "dependencies": {
+    "@mikro-orm/cli": "^4.5.9",
+    "@mikro-orm/core": "^4.5.9",
+    "@mikro-orm/migrations": "^4.5.9",
+    "@mikro-orm/postgresql": "^4.5.9",
+    "pg": "^8.7.1"
+  }
 }
